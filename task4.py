@@ -3,3 +3,11 @@
 # а значение - список элементов данного типа.
 # Для списка: [1, 2, "3", "4", True, 5.5]
 # Ответ:  {int: [1, 2, 5], float: [5.5], str: ["3", "4"], bool: [True]}
+
+list1 = (1, 3, True, False, "name", "6", 6.8)
+dict = []
+
+for elem in list1:
+    if elem == int:
+        dict[int] = elem
+        print(dict)
