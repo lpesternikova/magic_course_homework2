@@ -7,14 +7,19 @@
 # список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 # список: [], ищем: "123", ответ: -1
 
-list1 = list(input())
-print(list1)
+list1 = ["йцу", "фыв", "ячс", "цук", "йцукен", "йцу"]
 
-n = input()
+n = "йцу"
+result = 0
 
 for elem in list1:
-    if elem == n and n == list1:
-        print(True)
+    if elem == n:
+        result += 1
+    else:
+        result == result
+    if result == 2:
+        print(list1.index(elem, (list1.index(elem)+1)))
         break
 else:
-        print("Я не нашел такого значения")
+    print("Я не нашел такого значения")
+      
