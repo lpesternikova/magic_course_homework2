@@ -3,13 +3,10 @@
 #  Пример:
 # [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-spisok = str(input())
-b = 0
+spisok = [2, 3, 5, 9, 3]
 result = 0 
 
-for elem in spisok:
-    #print(spisok.index(elem))
-    b = spisok.index(elem)
-    if b % 2 != 0:
-        result += int(elem)
+for i in range(0, len(spisok)):
+    if i % 2 != 0:
+        result += spisok[i]
 print(result)
