@@ -18,8 +18,5 @@ for elem in list1:
     else:
         dict[elem] = 1
 
-#
-#print(dict)
-
 sorted_dict = sorted(dict.items(), key = lambda item: item[1], reverse=True)
 print(sorted_dict[0:10:])
