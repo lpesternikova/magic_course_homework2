@@ -3,3 +3,21 @@
 # максимальным и минимальным значением дробной части элементов.
 #  Пример:
 # [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+
+lst1 = [1.1, 1.2, 3.1, 5, 10.01]
+lst2 = []
+for elem in lst1:
+    new = round((elem % 1 * 10), 3)
+    lst2.append(new)
+    lst2.sort()
+    for elem in lst2:
+        if elem == 0:
+            lst2.remove(elem)
+
+print((max(lst2)-min(lst2))/10)
+
+
+
+    
+
+    
